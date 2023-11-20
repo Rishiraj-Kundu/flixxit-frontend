@@ -34,4 +34,13 @@ const Container = styled.div`
     font-weight: bolder;
     font-size: 1.05rem;
  }
+ @media (max-width: 480px) {
+    padding: 0 0.5rem;
+    .logo img {
+        display: none;
+    }
+    button {
+        margin-right: 10rem;
+    }
+ }
 `;

@@ -36,7 +36,7 @@ export default function BackgroundImage() {
 
   const addToList = async () => {
     try{
-        await axios.post("http://localhost:5000/api/user/add", {email, data:movie});
+        await axios.post("https://flixxit-server-zatq.onrender.com/api/user/add", {email, data:movie});
         setIsLiked(true);
     }catch(err) {
         console.log(err);
